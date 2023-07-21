@@ -295,8 +295,9 @@ a {
 }
 /* Feature */
 .feature {
-    margin-top: 130px;
-    }
+    margin-top: 100px;
+    padding: 30px 0;
+}
 
 .feature .content {
     width: 1024px;
@@ -352,4 +353,115 @@ a {
     color: #0d1111;
     font-size: 2rem;
     font-weight: 600;
+}
+/* Popular Courses */
+.popular {
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.popular__title {
+    margin: 18px 0;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.popular__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular__info .info__desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 32px; /* 177.778% */
+}
+
+.popular__info .view-more {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.popular .courses {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.popular .courses__item {
+    position: relative;
+}
+
+.courses__item .courses__img {
+    position: relative;
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.3499999940395355;
+    background: #d0efed;
+}
+
+.courses__item .courses__info {
+    position: absolute;
+    padding: 18px 25px 30px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    top: 322px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.courses__info .courses__name {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses__info .courses__desc {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    margin-top: 16px;
+    width: 265px;
+}
+
+.courses__info .courses__desc strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses__desc + .courses__desc {
+    margin-top: 6px;
+}
+
+.courses__schedule {
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses__classes,
+.courses__learning-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.courses__schedule .courses__classes::before,
+.courses__schedule .courses__learning-time::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
 }
